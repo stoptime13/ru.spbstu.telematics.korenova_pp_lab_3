@@ -23,7 +23,7 @@ public class LinearSolver {
 
         for (int th = 0; th < threadCount; ++th) {
             if (n - threadStep > from + threadStep) {
-                to = n;
+                to = n - threadStep;
             } else {
                 to = from + threadStep;
             }
